@@ -3,8 +3,8 @@ import { TypeAnimation } from "react-type-animation";
 
 function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8  bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
         {/* Left Content */}
         <motion.div
@@ -12,7 +12,7 @@ function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <p className="text-cyan-400 text-lg mb-2">
+          <p className="text-cyan-400 text-base text-lg mb-2">
             Hello, I'm
           </p>
 
@@ -22,7 +22,9 @@ function Hero() {
 
           <TypeAnimation
             sequence={[
-              "Full Stack Developer",
+              "Full Stack Python Developer",
+              2000,
+              "Django FrameWork",
               2000,
               "React Developer",
               2000,
@@ -32,26 +34,26 @@ function Hero() {
             wrapper="span"
             speed={50}
             repeat={Infinity}
-            className="text-2xl md:text-3xl text-cyan-400 font-semibold"
+            className="text-xl sm:text-2xl lg:text-3xl text-cyan-400 font-semibold"
           />
 
-          <p className="mt-6 text-gray-400 max-w-lg">
+          <p className="mt-6 text-gray-400 max-w-lg mx-auto md:mx-0">
             Passionate developer specializing in
             React, Django, Python, LangChain,
             Ollama, and AI-powered applications.
           </p>
 
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="/NITIN_BANSOD_Resume1.pdf"
-              className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg"
+              className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg text-center transition"
             >
               Download Resume
             </a>
 
             <a
               href="#contact"
-              className="border border-cyan-400 px-6 py-3 rounded-lg hover:bg-cyan-400 hover:text-black"
+              className="border border-cyan-400 px-6 py-3 rounded-lg hover:bg-cyan-400 hover:text-black text-center transition"
             >
               Contact Me
             </a>
@@ -67,12 +69,12 @@ function Hero() {
     duration: 3,
     repeat: Infinity,
   }}
-  className="flex justify-center"
+  className="flex justify-center mt-10 md:mt-0"
 >
   <img
     src="/profile.jpeg"
     alt="profile"
-    className="w-80 h-80 rounded-full object-cover border-4 border-cyan-400 shadow-2xl"
+    className="w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full object-cover border-4 border-cyan-400 shadow-2xl"
   />
 </motion.div>
 
