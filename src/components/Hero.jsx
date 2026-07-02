@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 
 function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8  bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    <section className="min-h-screen flex items-center justify-center pt-24 px-4 sm:px-6 lg:px-8  bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
         {/* Left Content */}
@@ -16,7 +16,7 @@ function Hero() {
             Hello, I'm
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white drop-shadow-[0_0_20px_rgba(34,211,238,0.7)]">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 text-white drop-shadow-[0_0_20px_rgba(34,211,238,0.7)]">
             Nitin Bansod
           </h1>
 
